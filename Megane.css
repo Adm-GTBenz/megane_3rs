@@ -122,6 +122,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+.colonne ul li:hover {
+    color: #6C829D;
+    font-weight: bold;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 768px) {
     .infos-techniques {
