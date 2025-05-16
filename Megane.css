@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8BA1BB;
+    font-family: Arial, sans-serif;
+}
+
+.contenu {
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.centre {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+}
+
+.separateur {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 20px;
+}
+
+.image-et-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-voiture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: lightgray;
+}
+
+.infos-techniques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.colonne {
+    flex: 1 1 45%;
+}
+
+.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 3px solid #6C829D;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.colonne ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.description-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.description-table td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.numero {
+    background-color: #6C829D;
+    color: white;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.litjes {
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .infos-techniques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colonne {
+        width: 100%;
+    }
+
+    .contenu {
+        margin: 20px;
+        padding: 15px;
+    }
+}
